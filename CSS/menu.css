@@ -21,10 +21,10 @@ body{
 }
 
 .container_logo{
-margin: 0;
-display: flex;
-justify-content: center;
-align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo{
@@ -93,7 +93,35 @@ align-items: center;
     width: 5rem;
 }
 
-#menu{
-    height: 6rem;
-    background-color: aqua;
+.menu_boton_selected,.menu_home_selected,.menu_precaucion_selected,.menu_servicios_selected,.menu_contactos_selected,.menu_concurso_selected{
+    border: 0.2rem solid var(--color_borde);
+    background-color: var(--color_boton);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    width: 13rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0 0 0 ;
+    text-decoration: none;
+    color: var(--color_fuente);
+    font-size: 1.2rem;
+    animation: menu .4s ease-in-out;
+}
+
+.menu_home_selected{
+    width: 5rem;
+}
+
+
+@keyframes menu {
+    0%{
+      translate: 0 2rem;
+      z-index: 1;  
+    }
+    100%{
+        translate: 0 0;
+    }
+    
 }
