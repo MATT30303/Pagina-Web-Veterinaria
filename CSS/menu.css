@@ -1,0 +1,99 @@
+:root{
+    --color_fondo: #F9FBFF;
+    --color_bloque:#B5D4FF;
+    --color_boton: #87B6F6;
+    --color_borde: #5089F2;
+    --color_fuente:#000000;
+
+}
+
+*{
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container_logo{
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo{
+    padding: 1rem 0 3rem 0;
+    width: 35vw;  
+}
+
+.container_bienvenido{
+    position:absolute;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.invitado_text{
+    font-weight: 700;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.boton_user{
+    border: 0.2rem solid var(--color_borde);
+    background-color: var(--color_boton);
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1rem;
+    padding: 0 .5rem 0 .5rem;
+    height: 4rem;
+}
+
+.icono_user{
+    width: 2rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_icono{
+    width: 2rem;
+}
+
+.menu_boton,.menu_home,.menu_precaucion,.menu_servicios,.menu_contactos,.menu_concurso{
+    border: 0.2rem solid var(--color_borde);
+    background-color: var(--color_boton);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    width: 13rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 1rem 0 0 0 ;
+    text-decoration: none;
+    color: var(--color_fuente);
+    font-size: 1.2rem;
+}
+
+.menu_home{
+    width: 5rem;
+}
+
+#menu{
+    height: 6rem;
+    background-color: aqua;
+}

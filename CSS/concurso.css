@@ -1,0 +1,170 @@
+:root{
+    --color_fondo: #F9FBFF;
+    --color_bloque:#B5D4FF;
+    --color_boton: #87B6F6;
+    --color_borde: #5089F2;
+    --color_fuente:#000000;
+
+}
+
+*{
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container_concurso{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.subcontainer_concurso{
+background-color: var(--color_bloque);
+width: 59rem;
+height: 80vh;
+border-top-left-radius: 2rem;
+border-top-right-radius: 2rem;
+margin: -1.5rem 0 0 0 ;
+overflow-y: scroll;
+}
+
+.subcontainer_concurso::-webkit-scrollbar {
+  display: none;
+}
+
+.container_fotoconcur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 5rem 0;
+}
+
+.imagen_concurso{
+    width: 35rem;  
+}
+
+.formulario_parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario_parte1 h2{
+    font-size: 2rem;
+}
+
+.texto_dueno{
+    font-size: 1.5rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dato_dueno{
+    width: 40%;
+    height:3rem;
+    border: 0.125rem solid var(--color_borde);
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0 0 0 1rem;
+}
+
+.icono_perro, .icono_gato{
+    width: 7rem;
+}
+
+.formulario_parte2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_opcion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.texto_pregunta{
+    font-size: 1.5rem;
+    padding: 5rem 0 2rem 0;
+
+}
+
+.texto_opcion1, .texto_opcion2{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.radio_opcion1, .radio_opcion2{
+    scale: 2;
+}
+
+.formulario_parte3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0 0 0;
+    gap: 2rem;
+
+}
+
+.formulario_personalidad1, .formulario_personalidad2, .formulario_personalidad3{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto_personalidad{
+    font-size: 1.5rem;
+}
+
+.formulario_parte3 h2{
+    font-size: 1.5rem;
+    padding: 0 0 2rem 0;
+}
+
+.dato_personalidad{
+    scale: 2;
+    width: 3rem;
+}
+
+.formulario_parte4_1, .formulario_parte4_2 {
+    padding: 3rem 0 0 0;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto_perro, .texto_gato{
+    font-size: 1.5rem;
+}
+
+.opcion_razaperro, .opcion_razagato{
+    width: 13vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border: .125rem solid var(--color_borde);
+    border-radius: .5rem;
+}
+
+.formulario_parte4_2{
+    padding: 0 0 5rem 0;
+}

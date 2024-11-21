@@ -1,0 +1,80 @@
+:root{
+    --color_fondo: #F9FBFF;
+    --color_bloque:#B5D4FF;
+    --color_boton: #87B6F6;
+    --color_borde: #5089F2;
+    --color_fuente:#000000;
+
+}
+
+*{
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.supercontainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.container_home{
+background-color: var(--color_bloque);
+width: 59rem;
+height: 80vh;
+border-top-left-radius: 2rem;
+border-top-right-radius: 2rem;
+margin: -1.5rem 0 0 0 ;
+}
+
+.container_sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0 0 0;
+    gap: 2rem;
+}
+
+.texto_general{
+    display: flex;
+    padding:  0 1rem 0 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 2rem;
+    text-align: center;
+
+}
+
+.imagen_mapa{
+    width: 20rem;
+}
+
+.container_sobre h2{
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+
+.container_turno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0 0 0;
+}
+
+.boton_turno{
+    background-color: var(--color_boton);
+    border: var(--color_borde) solid  0.2rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color_fuente);
+}
+

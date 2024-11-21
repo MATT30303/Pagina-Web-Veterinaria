@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Rye&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/Proyecto final webpage Vete/CSS/concurso.css">
+    <link rel="stylesheet" href="/Proyecto final webpage Vete/CSS/menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pekeñitos Vet</title>
+</head>
+<body>
+
+    <div class="container_bienvenido">
+        <span class="bienvenido_text">Bienvenido</span> <span class="invitado_text">Invitado</span>
+        <button class="boton_user"> <img src="imagenes proyecto final/icono_user.png" class="icono_user">Crear Cuenta/Ingresar </button>
+    </div>
+
+    <div class="container_logo">
+        <img src="imagenes proyecto final/pekenitos.png" class="logo">
+    </div>
+
+
+        <div class="menu">
+            <a href="/Proyecto final webpage Vete/index.html" class="menu_home"><img src="imagenes proyecto final/logo home.png" class="home_icono"></a>
+            <a href="/Proyecto final webpage Vete/precaucion.html" class="menu_precaucion">Precauciones</a>
+            <a href="/Proyecto final webpage Vete/servicios.html" class="menu_servicios">Servicios</a>
+            <a href="/Proyecto final webpage Vete/contacto.html" class="menu_contactos">Contactos</a>
+            <a href="/Proyecto final webpage Vete/concurso.html" class="menu_concurso">Concurso</a>
+        </div>
+
+<section class="container_concurso">
+    <div class="subcontainer_concurso">
+
+        <div class="container_fotoconcur">
+            <img src="imagenes proyecto final/peke_concurso.png" alt="Logo para concurso" class="imagen_concurso">
+        </div>
+
+        <form class="formulario_concurso">
+            <div class="formulario_parte1">
+                <h2>Datos del dueño/a</h2>
+                <span class="texto_dueno">Nombre Completo <input type="text" maxlength="25" required class="dato_dueno"></span>
+                <span class="texto_dueno">Fecha de Nacimiento<input type="date" required class="dato_dueno"></span>
+                <span class="texto_dueno">Número de contacto<input type="number" min="0" required class="dato_dueno"></span>
+                <span class="texto_dueno">DNI<input type="number" min="0" required class="dato_dueno"></span>
+            </div>
+
+            <div class="formulario_parte2">
+                <span class="texto_pregunta">¿Que animal es tu compañero peludo?</span>
+                <div class="container_opcion">
+                    <span class="texto_opcion1"><img src="imagenes proyecto final/icono_opcion1.png" class="icono_perro"> Perro<input type="radio" value="perro" name="mascota" class="radio_opcion1"> 
+                    </span>
+
+                    <span class="texto_opcion2"><img src="imagenes proyecto final/icono_opcion2.png" class="icono_gato"> Gato<input type="radio" value="gato" name="mascota" class="radio_opcion2"> 
+                    </span>
+                </div>
+            </div>
+
+            <div class="formulario_parte3">
+                <h2>Selecciona los que mejor definan tu mascota</h2>
+                <div class="formulario_personalidad1">
+                    <span class="texto_personalidad">Es tierno <input type="checkbox" name="categoria" id="tierno" class="dato_personalidad"></span>
+                    <span class="texto_personalidad">Es meloso <input type="checkbox" name="categoria" id="meloso" class="dato_personalidad"></span>
+                    <span class="texto_personalidad">Es dramatico <input type="checkbox" name="categoria" id="dramatico" class="dato_personalidad"></span>
+                </div>
+
+                <div class="formulario_personalidad2">
+                    <span class="texto_personalidad">Es travieso <input type="checkbox" name="categoria" id="travieso" class="dato_personalidad"></span>
+                    <span class="texto_personalidad">Es enojon <input type="checkbox" name="categoria" id="enojon" class="dato_personalidad"></span>
+                    <span class="texto_personalidad">Es compañero <input type="checkbox" name="categoria" id="companero" class="dato_personalidad"></span>
+                </div>
+
+                <div class="formulario_personalidad3">
+                    <span class="texto_personalidad">Todas las anteriores <input type="checkbox" name="categoria" id="todo" class="dato_personalidad"></span>
+                    <span class="texto_personalidad">Ninguna de las anteriores <input type="checkbox" name="categoria" id="nada" class="dato_personalidad"></span>
+                </div>
+
+                <div class="formulario_parte4_1">
+                    <span class="texto_perro">¿Que raza es tu perro?</span>
+                    <select name="perros" id="perro" class="opcion_razaperro">
+                        <option value="0" disabled selected class="raza0p">Seleccione una opción</option>
+                        <option value="1" class="raza1p">Shar Pei</option>
+                        <option value="2" class="raza2p">Pastor alemán</option>
+                        <option value="3" class="raza3p">Husky siberiano</option>
+                        <option value="4" class="raza4p">Beagle</option>
+                        <option value="5" class="raza5p">Golden retriever</option>
+                        <option value="6" class="raza6p">Desconozco</option>
+                    </select>
+                </div>
+                <div class="formulario_parte4_2">
+                    <span class="texto_gato">¿Que raza es tu gato?</span>
+                    <select name="gatos" id="gato" class="opcion_razagato">
+                        <option value="0" disabled selected class="raza0g">Seleccione una opción</option>
+                        <option value="1" class="raza1g">Siamés</option>
+                        <option value="2" class="raza2g">Maine Coon</option>
+                        <option value="3" class="raza3g">Azul ruso</option>
+                        <option value="4" class="raza4g">Gato oriental de pelo corto</option>
+                        <option value="5" class="raza5g">Rayado</option>
+                        <option value="6" class="raza6g">Desconozco</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</section>
+</body>
+<script src="/Proyecto final webpage Vete/Javascrypt/menu.js" defer></script>
+</html>
